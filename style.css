@@ -63,7 +63,7 @@
     width: 400px;
     height: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     border: 1px solid black;
 }
@@ -122,7 +122,7 @@
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
-.zoom-animation span{
+.zoom1-animation span{
     height: 90px;
     width: 90px;
     border: 1px solid black;
@@ -155,10 +155,10 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
-.zoom-animation :hover{
+.zoom1-animation :hover{
     cursor: pointer;
-    animation-name: zooom-animation;
-    animation-duration: 2s;
+    animation-name: zoom-animation;
+    animation-duration: 3s;
     transform: scale(2);
     animation-iteration-count: infinite;
 }
@@ -192,10 +192,12 @@
       }
 }
 @keyframes rotate-zoom-animation {
-    50%{
-        transform: scale(2,2);
-    }
-
-    100%{transform: rotate(180deg);
+  
+    50%{transform:rotate(180deg);
+        height: 200px;
+        width: 200px;   
+    margin-left: 50px;  }
+  
+    100%{transform: rotate(360deg);
     }
 }
